@@ -5,7 +5,7 @@ $(document).ready(function() {
         if (something === "") {
             alert('No item entered')
         } else {
-            $('.items ul').append("<li class='currentItem'> " + something + "</li>");
+            $('.items ul').append("<li> " + something + "</li>");
         }
         $('#userInput')[0].reset();
     });
