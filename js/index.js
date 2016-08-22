@@ -1,7 +1,7 @@
 var $ = require ('jquery');
 
-$(document).ready(=>() {
-    $('#userInput').submit(=>(event) {
+$(document).ready(function() {
+    $('#userInput').submit(function(event) {
         event.preventDefault();
         var something = $('#inputBox').val();
         if (something === "") {
@@ -12,13 +12,13 @@ $(document).ready(=>() {
         $('#inputBox').val("");
     });
 
-$('body').on('click', 'i.fa.fa-trash', =>(event){
+$('body').on('click', 'i.fa.fa-trash', function(event){
     $(this).parent().remove();
 
 })
 
 
-$('body').on('click', 'i.fa.fa-check', =>(event){
+$('body').on('click', 'i.fa.fa-check', function(event){
     $(this).parent().wrap('<strike>');
 })
 
